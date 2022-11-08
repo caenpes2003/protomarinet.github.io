@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: #171717;
+
+    width: 100%;
+    z-index: 100%;
+}
+
+.logo {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.barra {
+    display: flex;
+    margin-right: 240px;
+    margin-left: 0;
+}
+
+.barra a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    font-size: 16px;
+}
+
+.barra a:hover {
+    background: #e91e63;
+}
+
+header {
+    font-family: arial black;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: url(Bahia2.jpg) no-repeat center;
+    background-size: cover;
+    height: 92vh;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 70px;
+    padding: 80px;
+    color: black;
+}
+
+.palabrauno {
+    color: red;
+    text-shadow: 0 0 yellow;
+}
+
+.palabrados {
+    color: yellow;
+    text-shadow: 1px 0 red;
+}
+
+.palabratres {
+    color: green;
+    text-shadow: 0 0 red;
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 35px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    /*background: #e91e63;*/
+
+
+}
+
+.info:hover {
+    background: #e91e63;
+    box-shadow: 0 0 10px #e91e63, 0 0 40px #e91e63, 0 0 80px #e91e63;
+    transition-delay: 1s
+}
+
+.info span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e91e63);
+}
+
+.info:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #e91e63);
+}
+
+.info:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #e91e63);
+}
+
+.info:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #e91e63);
+}
+
+.info:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+#informacion {
+    background: rgb(20, 20, 20);
+    padding: 115px 200px;
+    z-index: 100;
+    color: white;
+
+}
+
+#informacion h2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+
+}
+
+#informacion p {
+    text-align: justify;
+    hyphens: auto;
+    padding: 100px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uno {
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 10px 20px;
+    hyphens: auto;
+    padding: 40px;
+}
+
+#estado1 {
+    background: rgb(100, 0, 0);
+    color: white;
+    height: 800px;
+}
+
+#estado1 h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding: 60px 40px;
+    height: 10px;
+}
+
+#estado1 p {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+
+.mapa {
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background: rgb(80, 0, 0);
+    padding: 18px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-right: 1250px;
+
+}
+
+.mapa:hover {
+    background: black;
+    box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+
+    color: white;
+}
+
+.llamado {
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background: rgb(80, 0, 0);
+    padding: 18px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.llamado:hover {
+    background: black;
+    box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+    color: white;
+}
+
+.dos {
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 10px 20px;
+    hyphens: auto;
+    padding: 40px;
+}
+
+#estado2 {
+    background: rgb(170, 120, 0);
+    color: white;
+    height: 800px;
+}
+
+#estado2 h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding: 60px 40px;
+    height: 10px;
+}
+
+#estado2 p {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+
+.mapa2 {
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background: rgb(170, 100, 0);
+    padding: 18px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-right: 1250px;
+
+}
+
+.mapa2:hover {
+    background: black;
+    box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+
+    color: white;
+}
+
+.llamadodos {
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    background: rgb(170, 100, 0);
+    padding: 18px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.llamadodos:hover {
+    background: black;
+    box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+    color: white;
+}
+
+.tres {
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 10px 20px;
+    hyphens: auto;
+    padding: 40px;
+}
+
+#geografia {
+    background: url(iaa.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    height: 1000px;
+    
+}
+
+#geografia h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding: 60px 40px;
+    height: 10px;
+}
+
+#geografia p {
+    text-align: justify;
+    hyphens: auto;
+    padding: 0 90px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#geografia h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    padding: 40px;
+    height: 30px;
+}
+
+.rj{
+    color: red;
+    text-transform: uppercase;
+    margin-right: 1095px;
+}
+
+.am{
+    color: yellow;
+    text-transform: uppercase;
+    margin-right: 1030px;
+}
+
+.az{
+    color: rgb(0, 80, 250);
+    text-transform: uppercase;
+    margin-right: 1080px;
+}
+
+
+
+#geografia .rojo{
+    font-size: 28px;
+    color: white;
+}
+#geografia .text{
+    font-size: 20px;
+    color: white;
+    height: 50px;
+}
+
+#puntos {
+    background: rgb(0, 0, 80);
+    color: white;
+    height: 1150px;
+}
+
+.cuatro {
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 10px 20px;
+    hyphens: auto;
+    padding: 40px;
+}
+#puntos h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    padding: 60px 40px;
+    height: 10px;
+}
+
+#puntos p {
+    text-align: justify;
+    hyphens: auto;
+    padding: 0 120px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
